@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Projekt 1 - wahadło matematyczne</title>
+    <link rel="stylesheet" type="text/css" href="sec1.css">
+</head>
+<body>
+    <ul>
+        <li><a href="main.html">HOME</a></li>
+        <li><a href="#">MENU</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">SYMULACJE</a>
+            <div class="dropdown-content">
+                <a href="sym1.html">Symulacja wahadła nie tłumionego</a>
+                <a href="sym2.html">Symulacja wahadła tłumionego</a>
+            </div>
+        </li>
+    </ul>
+
+
+    <article>
+        <section>
+            <h2 style="text-align: center; color: crimson">Wahadło matematyczne</h2>
+            <p>Wahadło matematyczne to przykłady oscylatora harmonicznego, którego drgania zachodzą
+                w płaszczyźnie pionowej, pod wpływem siły grawitacji.Jest to przykład wahadła mającego postać ciała o
+                masie m zawieszonego na jednym z końców nierozciągliwej
+                linki o znikomej masie i o długości L, której drugi koniec zamocowany jest w stałym punkcie. Przykładem takiego
+                wahadła jest układ ciężarek, wykonujący drgania w płaszczyźnie
+                pionowej w kierunku z lewa na prawą.</p>
+        </section>
+        <section>
+            <h3>Wahadło matematyczne - rozkład sił</h3>
+            <p>Zgodnie z poniższym rysunkiem siłami działającymi na ciężarek są siła naprężenia linki Fl oraz siła ciężkości Fg,
+                skierowana równolegle do linii przerywanej oznaczającej położenie równowagi układu ciężarek - linka.
+                Po rozłożeniu siły Fg na składowe otrzymujemy składową radialną Fg cosφ, skierowaną przeciwnie do siły Fl
+                oraz składową Fg sinφ - styczną do toru ruchu ciężarka. Podobnie jak w przypadku wahadła torsyjnego,
+                także i w tym przypadku na ciężarek wykonujący drgania działa moment siły M, dążący do przywrócenia
+                położenia równowagi ciężarka, o wartości:
+                <img src="img/wz0.JPG" alt="wzory" style="display:block;margin:auto;">
+                Za powstanie momentu siły M, działającego przeciwnie do wychylenia ciężarka (stąd znak minus w powyższym wyrażeniu),
+                odpowiada składowa Fg sinφ. W przybliżeniu małych kątów (φ ≤ 5o), tj. drgań o małej amplitudzie, częstość kołową
+                ω oraz okres T drgań wahadła matematycznego możemy wyznaczyć korzystając z poniższych wzorów:
+                <img src="img/wz1.JPG" alt="wzory" style="display:block;margin:auto;">
+                gdzie:<br /> m - masa ciężarka,<br /> g - przyspieszenie ziemskie,<br /> L - odległość dzieląca punkt zawieszenia
+                wahadła od środka jego masy równa długości linki,<br /> I - moment bezwładności wahadła względem jego punktu zawieszenia.
+            </p>
+        </section>
+        <section>
+            <h3>Częstość kołowa i okres drgań wahadła matematycznego - wzór</h3>
+            <p>
+                Zapisując moment bezwładności wahadła jako I = mL<sup>2</sup> otrzymamy:
+                <img src="img/wz2.JPG" alt="wzory" style="display:block; margin:auto;">
+                Zasadniczą różnicą pomiędzy wahadłem matematycznym a wahadłem fizycznym jest rozkład ich masy. W przypadku
+                wahadła matematycznego, jego całkowita masa skupiona jest w ciężarku zawieszonym na lince, znajdującym się w
+                odległości L, odpowiadającej długości linki, od punktu jego zawieszenia. Rozkład masy wahadła fizycznego,
+                nazywanego również wahadłem rzeczywistym, jest nieco bardziej skomplikowany w porównaniu z wahadłem matematycznym.
+            </p>
+        </section>
+    </article>
+    <div class="fot">
+        <img class="image" src="img/rys1.JPG" alt="wzory" />
+        <div class="inF">
+            <p>Schemat wahadła matematycznego</p>
+        </div>
+        <div class="middle">
+            <a class="text" href="https://pl.wikipedia.org/wiki/Wahad%C5%82o" target="_blank">Sprawdź na wikipedii</a>
+        </div>
+    </div>
+</body>
+</html>

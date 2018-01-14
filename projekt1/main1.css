@@ -1,0 +1,101 @@
+/* BODY - LAYOUT*/
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.container{
+    height: 300px;
+}
+
+.htmlBall{
+    margin: 0 auto;
+    width: 145px;
+    height: 194px;
+    background: url(img/ball.png) no-repeat;
+    -webkit-transform-origin: 50% -40px;
+    -moz-transform-origin: 50% -40px;
+    -webkit-animation: oscillation 2s ease-in-out infinite alternate;
+    -moz-animation: oscillation 2s ease-in-out infinite alternate;
+}
+
+
+/* specyfikacja zasad animacji oscylacji wykorzystującej ruch kuli "HTML"  */
+@-webkit-keyframes oscillation {
+    from {
+        -webkit-transform: rotate(-60deg);
+    }
+    to {
+        -webkit-transform: rotate(60deg);
+    }
+}
+
+@-moz-keyframes oscillation {
+    from {
+        -moz-transform: rotate(-60deg);
+    }
+    to {
+        -moz-transform: rotate(60deg);
+    }
+}
+/* Aspect of button,span, pseudo-class etc*/
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+.button {
+    margin: 0 auto;
+    width:100%;
+    display: block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}

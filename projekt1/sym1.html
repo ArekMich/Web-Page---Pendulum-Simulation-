@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Symulacja 1 wahadła</title>
+    <link rel="stylesheet" type="text/css" href="sym1a.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="main.html">HOME</a>
+        <a href="sec.html">MENU</a>
+        <a href="sym2.html">SYMULACJA 2</a>
+    </div>
+
+    <div class="flex-container">
+
+            <canvas id="myCanvas" width="600" height="330"
+                    style="border:2px solid black;  background: lightskyblue"></canvas>
+
+        <div class="content">
+            <h2 style="text-align: center"><i>Symulacja wahadła matematycznego <b>nie tłumionego</b></i></h2>
+            <input type="number" id="ampl" class="frstInput" placeholder="Amplituda(0-90)" style="width:200px;"><br />
+            <input type="number" id="leng" class="frstInput" placeholder="Długość liny(0-250px)" style="width:200px;"><br />
+            <input type="button" id="but" class="frstInput" onclick="Start()" value="Start"><br />
+            <input type="button" id="but2" class="frstInput" onclick="location.reload();" value="Reset"><br />
+        </div>
+    </div>
+    <div class="blackBoard">
+            <i>Rad</i>  <input type="text" class="secInput" id="demo" value="0">
+            <i>Degree</i>  <input type="text" class="secInput" id="demo2" value="0" >
+            <i>Time</i>  <input type="text" class="secInput"  id="demo3" value="0">
+            <i>X</i>  <input type="text" class="secInput" id="demo4" value="0" >
+            <i>Y</i>  <input type="text" class="secInput" id="demo5" value="0" >
+    </div>
+
+
+    <div class="footer">
+        <p>Autor: Arkadiusz Michalik</p>
+        <p>E-mail: <a href="mailto:arkadiusz.michalik96@gmail.com">arkadiusz.michalik96@gmail.com</a>.</p>
+    </div>
+
+    <script src="anim.js"></script>
+</body>
+</html>
